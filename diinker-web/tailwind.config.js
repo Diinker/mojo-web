@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'nature': ['Nature', 'sans-serif'],
+        nature: ['Nature-Regular', 'sans-serif'],
+        'nature-light': ['Nature-Light', 'sans-serif'],
       },
     },
   },

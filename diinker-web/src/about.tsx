@@ -3,7 +3,7 @@ import HeroSection from "./components/HeroSection"
 
 function App() {
   return (
-    <div className="min-h-dvh w-full bg-linear-to-b from-[#1f23d6] to-black">
+    <div className="min-h-dvh w-full bg-black">
       {/* HEADER */}
       <NavBar />
       {/* MAIN CONTENT */}
