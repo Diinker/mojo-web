@@ -1,3 +1,5 @@
+import QuestionsAndAnswers from "./components/Content/QuestionsAndAnswers";
+import Footer from "./components/Footer";
 import FAQHero from "./components/Heros/FAQHero";
 // import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
@@ -9,7 +11,8 @@ function App() {
       <NavBar />
       <FAQHero />
       {/* MAIN CONTENT */}
-      {/* <Footer /> */}
+      <QuestionsAndAnswers />
+      <Footer />
     </div>
   )
 }

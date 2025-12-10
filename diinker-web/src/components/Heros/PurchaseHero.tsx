@@ -1,7 +1,7 @@
 // import ActionButtons from "./ActionButtons"
 import checkmark from "/assets/images/check-check.png";
 
-export default function HeroSection() {
+export default function PurchaseHero() {
   return (
     <div className="text-white flex flex-col items-center md:flex-row mt-85 justify-center md:justify-around">
         

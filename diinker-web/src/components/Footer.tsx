@@ -39,7 +39,7 @@ export default function Footer() {
         <div className="">
           <h2 className="text-lg md:text-2xl font-nature">Legal</h2>
           <div className="font-nature-light">
-            <Link to="/terms">
+            <Link to="/accessibility">
               <p className="text-sm md:text-lg hover:font-nature hover: transition duration-300 ease-in-out">
                 Accessibility
               </p>
@@ -60,14 +60,14 @@ export default function Footer() {
         <div className="">
           <h2 className="text-lg md:text-2xl font-nature">Map</h2>
           <div className="font-nature-light">
-            <Link to="/">
-              <p className="text-sm md:text-lg hover:font-nature hover: transition duration-300 ease-in-out">
-                Home
-              </p>
-            </Link>
             <Link to="/about">
               <p className="text-sm md:text-lg hover:font-nature hover: transition duration-300 ease-in-out">
                 About
+              </p>
+            </Link>
+            <Link to="/purchase">
+              <p className="text-sm md:text-lg hover:font-nature hover: transition duration-300 ease-in-out">
+                Purchase
               </p>
             </Link>
             <Link to="/download">
