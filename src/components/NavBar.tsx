@@ -22,7 +22,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="text-white bg-[#0000007c] h-20 rounded-b-2xl px-10">
+    <nav className="text-white bg-[#0000007c] py-6 rounded-b-2xl px-10 sticky top-0 z-50">
       <div className="flex flex-row justify-between items-center h-full">
         <div className="text-3xl font-bold z-20">
           <Link to="/" onClick={closeMenu}>

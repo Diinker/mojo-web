@@ -5,9 +5,7 @@ import Android from "/assets/images/android-download.png";
 
 export default function DownloadHero() {
   return (
-    <div className="text-white flex flex-col items-center md:flex-row mt-30 justify-center md:justify-around">
-        
-        {/* 🚀 APPLY text-center HERE or to the h1 directly */}
+    <div className="flex-1 w-full text-white flex flex-col items-center justify-center md:flex-row md:justify-around">
         <div className="text-center"> 
           <h1 className="text-5xl md:text-6xl font-nature pb-2">Download the app</h1>
           <p className="font-nature-light pt-5 text-xl">Coming soon to iOS and Android</p>
