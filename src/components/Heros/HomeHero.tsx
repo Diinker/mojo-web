@@ -4,7 +4,7 @@ import diinkerhome from "/assets/images/diinkerhome.png";
 
 export default function HomeHero() {
   return (
-    <div className="text-white flex flex-col items-center md:flex-row mt-85 justify-center md:justify-around">
+    <div className="text-white flex flex-col items-center md:flex-row mt-35 justify-center md:justify-around">
       <div className="text-center">
         <h1 className="text-5xl md:text-6xl font-nature pb-2">
           Scoring, Simplified.
