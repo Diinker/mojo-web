@@ -1,24 +1,27 @@
-import ConnectAndCompete from "./components/Content/ConnectCompete";
-import CreationReason from "./components/Content/CreationReason";
-import StatTracking from "./components/Content/Step2";
+import BlockOne from "./components/Content/BlockOne";
+import BlockThree from "./components/Content/BlockThree";
+import BlockTwo from "./components/Content/BlockTwo";
 import Footer from "./components/Footer";
 import AboutHero from "./components/Heros/AboutHero";
-// import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div className="min-h-dvh w-full bg-linear-to-b from-[#1f23d6] to-black">
-      {/* HEADER */}
+    <div className="flex flex-col min-h-dvh w-full bg-linear-to-b from-[#1f23d6] to-black">
       <NavBar />
-      <AboutHero />
-      {/* MAIN CONTENT */}
-      <CreationReason />
-      <StatTracking />
-      <ConnectAndCompete />
+      <main className="flex-1">
+        <AboutHero />
+        <div className="flex flex-row mt-15">
+          <BlockOne />
+          <div className="w-0.5 h-40 bg-white"></div>
+          <BlockTwo />
+          <div className="w-0.5 h-40 bg-white"></div>
+          <BlockThree />
+        </div>
+      </main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
