@@ -2,10 +2,11 @@ export default function AboutHero() {
   return (
     <div className="text-white flex flex-col items-center md:flex-row mt-30 justify-center md:justify-around">
       <div className="text-center">
-        <h1 className="text-4xl md:text-5xl font-nature pb-2">
+        <h1 className="text-4xl md:text-6xl font-nature pb-2">
           Built for{" "}
-          <span className="text-shadow-md text-shadow-[#aeaeae]">results</span>,<br />
-          Powered by{" "}
+          <span className="text-shadow-md text-shadow-[#aeaeae]">results</span>,
+          {/* The break is hidden on md screens and up */}
+          <br className="md:hidden" /> Powered by{" "}
           <span className="text-shadow-md text-shadow-[#aeaeae]">
             intelligence
           </span>

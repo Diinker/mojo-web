@@ -4,6 +4,7 @@ import BlockTwo from "./components/Content/BlockTwo";
 import Footer from "./components/Footer";
 import AboutHero from "./components/Heros/AboutHero";
 import NavBar from "./components/NavBar";
+import AppFeatures from './components/Content/AppFeatures';
 
 function App() {
   return (
@@ -11,15 +12,19 @@ function App() {
       <NavBar />
       <main className="flex-1">
         <AboutHero />
-        <div className="flex flex-row mt-15">
+        <div className="flex flex-row my-20 2xl:px-40">
           <BlockOne />
           <div className="w-0.5 h-40 bg-white"></div>
           <BlockTwo />
           <div className="w-0.5 h-40 bg-white"></div>
           <BlockThree />
         </div>
+        <AppFeatures />
       </main>
-      <Footer />
+      <div className="mt-100">
+        {/* Temporary, margin needs fixed */}
+        <Footer />
+      </div>
     </div>
   );
 }
