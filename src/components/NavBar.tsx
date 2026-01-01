@@ -32,7 +32,7 @@ export default function Navbar() {
 
         <div className="hidden text-lg sm:flex flex-row gap-8 font-nature-light">
           {navLinks.map((link) => (
-            <Link key={link.to} to={link.to} className="hover:font-nature">
+            <Link key={link.to} to={link.to} className="hover:scale-105 transition duration-300">
               <p>{link.text}</p>
             </Link>
           ))}
