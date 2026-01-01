@@ -10,9 +10,9 @@ export default function HomeHero() {
         <p className="text-lg sm:text-xl xl:text-2xl font-nature-light pb-10 opacity-90 max-w-2xl">
           The habit tracker designed to turn small daily wins into massive momentum.
         </p>
-        <div className="w-full flex justify-center">
+        {/* <div className="w-full flex justify-center">
           <ActionButtons />
-        </div>
+        </div> */}
       </div>
     </section>
   );

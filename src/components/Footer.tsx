@@ -5,7 +5,7 @@ import YouTube from "/assets/images/youtube.png";
 
 export default function Footer() {
   return (
-    <div className="text-white bg-[#00036667] border-t flex flex-col p-10">
+    <div className="text-white bg-black border-t flex flex-col p-10">
       <div className="flex flex-row justify-evenly">
         {/* BRANDING */}
         <div className="flex flex-col gap-3">
