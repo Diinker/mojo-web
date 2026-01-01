@@ -1,8 +1,6 @@
 import NavBar from "./components/NavBar";
 import HeroSection from "./components/Heros/HomeHero";
-import PromoSection from "./components/PromoSection";
 import Footer from "./components/Footer";
-import HowItWorksSection from "./components/HowItWorks";
 
 export default function App() {
   return (
@@ -11,12 +9,7 @@ export default function App() {
       <NavBar />
       <main className="relative z-10 flex flex-col gap-24 md:gap-48 pb-20"> 
         <HeroSection />
-        <div className="flex flex-col gap-32">
-          <PromoSection /> 
-          <HowItWorksSection />
-        </div>
       </main>
-
       <Footer />
     </div>
   );

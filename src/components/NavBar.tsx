@@ -15,10 +15,8 @@ export default function Navbar() {
   };
 
   const navLinks = [
-    { to: "/purchase", text: "Purchase" },
-    { to: "/download", text: "Download" },
-    { to: "/about", text: "About" },
-    { to: "/contact", text: "Contact" },
+    { to: "/purchase", text: "Sign In" },
+    { to: "/download", text: "Get Started" },
   ];
 
   return (
@@ -26,11 +24,11 @@ export default function Navbar() {
       <div className="flex flex-row justify-between items-center h-full">
         <div className="text-3xl font-bold z-20">
           <Link to="/" onClick={closeMenu}>
-            <p className="font-nature">diinker</p>
+            <p className="font-nature">Mojo</p>
           </Link>
         </div>
 
-        <div className="hidden text-lg sm:flex flex-row gap-8 font-nature-light">
+        <div className="hidden text-lg sm:flex flex-row gap-8 font-nature">
           {navLinks.map((link) => (
             <Link key={link.to} to={link.to} className="hover:scale-105 transition duration-300">
               <p>{link.text}</p>

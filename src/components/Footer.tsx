@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="flex flex-row justify-evenly">
         {/* BRANDING */}
         <div className="flex flex-col gap-3">
-          <h1 className="text-4xl md:text-5xl font-nature">diinker</h1>
+          <h1 className="text-4xl md:text-5xl font-nature">Mojo</h1>
           <p className="font-nature-light text-sm md:text-lg">Tulsa, OK | USA</p>
           <div className="flex gap-5 items-center">
             <Link to="https://youtube.com/@diinker">
@@ -103,7 +103,7 @@ export default function Footer() {
       </div>
       {/* COPYRIGHT STATEMENT */}
       <div className="flex flex-row justify-center pt-10">
-        <p className="font-nature">© 2025 Diinker | All Rights Reserved</p>
+        <p className="font-nature">© 2025 Mojo | All Rights Reserved</p>
       </div>
     </div>
   );
