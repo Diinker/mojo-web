@@ -16,13 +16,13 @@ export default function NavBar() {
       {/* Desktop Links - Hidden on mobile, Flex on md screens and up */}
       <div className="hidden md:flex flex-row items-center gap-8 font-nature">
         <a
-          href="#"
+          href="auth/login"
           className="bg-white text-black px-10 py-2 rounded-2xl font-medium border border-transparent hover:bg-black hover:border-white hover:text-white transition-all duration-300 ease-in-out"
         >
           Sign In
         </a>
         <a
-          href="#"
+          href="/auth/register"
           className="bg-white text-black px-5 py-2 rounded-2xl font-medium border border-transparent hover:bg-black hover:border-white hover:text-white transition-all duration-300 ease-in-out"
         >
           Get Started
@@ -41,10 +41,10 @@ export default function NavBar() {
       {/* Mobile Sidebar Overlay */}
       {isOpen && (
         <div className="fixed inset-0 bg-black flex flex-col items-center justify-center gap-8 text-2xl md:hidden font-nature">
-          <a href="#" onClick={() => setIsOpen(false)}>
+          <a href="auth/login" onClick={() => setIsOpen(false)}>
             Sign In
           </a>
-          <a href="#" onClick={() => setIsOpen(false)}>
+          <a href="/auth/register" onClick={() => setIsOpen(false)}>
             Get Started
           </a>
         </div>
