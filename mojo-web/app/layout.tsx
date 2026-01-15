@@ -1,10 +1,5 @@
 import type { Metadata } from "next";
-import { 
-  beyonders, 
-  coolvetica, 
-  nature, 
-  natureLight 
-} from "../lib/fonts";
+import { nature, natureLight } from "../lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -17,19 +12,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const fontClasses = [
-    beyonders.variable,
-    coolvetica.variable,
-    nature.variable,
-    natureLight.variable,
-    "antialiased"
-  ].join(" ");
-
   return (
-  <html lang="en">
-    <body className={fontClasses} suppressHydrationWarning>
-      {children}
-    </body>
-  </html>
-);
+    <html lang="en" className={`${nature.variable} ${natureLight.variable}`}>
+      <body className={`${nature.className} antialiased`} suppressHydrationWarning>
+        {children}
+      </body>
+    </html>
+  );
 }

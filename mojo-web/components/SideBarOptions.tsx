@@ -13,7 +13,7 @@ export default function SideBar() {
   const gapHeight = 64; 
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-125 bg-[#161616] rounded-3xl w-20 py-6">
+    <div className="flex flex-col items-center justify-center bg-[#161616] rounded-4xl w-20 py-2">
       <div className="relative flex flex-col gap-4">
         <div 
           className="absolute left-0 w-12 h-12 bg-[#cfff04] rounded-full transition-all duration-400 ease-in-out"
