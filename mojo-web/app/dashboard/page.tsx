@@ -2,6 +2,7 @@ import CurrentTasks from "@/components/CurrentTasks";
 import SideBar from "@/components/SideBar";
 import WeeklySummary from "@/components/WeeklySummary";
 import MainNav from "@/components/MainNav"; // Import the new component
+import Score from "@/components/Score";
 
 export default function dashboardPage() {
   return (
@@ -13,8 +14,9 @@ export default function dashboardPage() {
         </div>
         
         <main className="flex flex-col pl-5 gap-4 w-1/2 h-[calc(100vh-250px)]">
-          <div className="flex-1">
+          <div className="flex flex-row gap-4">
             <WeeklySummary />
+            <Score />
           </div>
           <div className="flex-1">
             <CurrentTasks />
