@@ -1,4 +1,4 @@
-import { Logs, ArrowUpRight } from "lucide-react";
+import { Medal, ArrowUpRight } from "lucide-react";
 
 export default function CurrentTasks() {
   return (
@@ -7,7 +7,7 @@ export default function CurrentTasks() {
       <div className="flex items-center justify-between w-full">
         <div className="flex items-center gap-4">
           <div className="bg-[#222] p-3 rounded-2xl">
-            <Logs size={28} className="text-[#a3e635]" />
+            <Medal size={28} className="text-[#a3e635]" />
           </div>
           <div className="flex flex-col">
             <h1 className="text-2xl  leading-tight">Score</h1>

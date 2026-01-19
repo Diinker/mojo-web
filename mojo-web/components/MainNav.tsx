@@ -5,7 +5,10 @@ import { Menu, Sun, Moon, Send, Bell, SquareUserRound } from "lucide-react";
 
 export default function Navbar() {
   const [theme, setTheme] = useState<"light" | "dark">("dark");
-  const currentDate = new Date().toLocaleDateString("en-us");
+  const currentMonth = new Date().toLocaleDateString('default', { month: 'long' });
+  const currentDay = new Date().getDate();
+  const currentYear = new Date().getFullYear();
+  const currentDate = `${currentMonth} ${currentDay}, ${currentYear}`;
 
   return (
     <div className="w-full pt-10 px-10">

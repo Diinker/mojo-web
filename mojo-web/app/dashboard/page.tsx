@@ -1,19 +1,18 @@
 import CurrentTasks from "@/components/CurrentTasks";
 import SideBar from "@/components/SideBar";
 import WeeklySummary from "@/components/WeeklySummary";
-import MainNav from "@/components/MainNav"; // Import the new component
+import MainNav from "@/components/MainNav";
 import Score from "@/components/Score";
 
 export default function dashboardPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#0a0a0a] text-white">
+    <div className="flex flex-col min-h-screen bg-[#0a0a0a] text-white overflow-x-hidden">
       <MainNav />
-      <div className="flex flex-1 px-10 items-start pb-10">
-        <div className="w-fit">
+      <div className="flex flex-1 px-10 pb-10 gap-5">
+        <aside className="w-fit">
           <SideBar />
-        </div>
-        
-        <main className="flex flex-col pl-5 gap-4 w-1/2 h-[calc(100vh-250px)]">
+        </aside>
+        <main className="flex flex-1 flex-col gap-4 min-w-0">
           <div className="flex flex-row gap-4">
             <WeeklySummary />
             <Score />
